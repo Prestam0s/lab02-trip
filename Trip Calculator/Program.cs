@@ -1,0 +1,36 @@
+﻿//Part 1: Road Trip
+
+System.Console.Write("How many miles is your round trip? ");
+double roundTripMiles = Convert.ToDouble(Console.ReadLine());
+
+System.Console.Write("How many miled per gallon does your car get? ");
+double milesPerGallon = Convert.ToDouble(Console.ReadLine());
+
+System.Console.Write("What is the price per gallon of gas in dollars? $");
+double pricePerGallon = Convert.ToDouble(Console.ReadLine());
+
+double gallonsNeeded = Convert.ToDouble(roundTripMiles/milesPerGallon);
+double fuelCost = Convert.ToDouble(gallonsNeeded * pricePerGallon);
+
+System.Console.WriteLine($"Gallons needed: {gallonsNeeded.ToString("F2")}");
+System.Console.WriteLine($"Fuel Cost: {fuelCost.ToString("C")}");
+
+//Part 2: Pizza Party
+const int slicesPerPizza = 8;
+
+System.Console.Write("How many people are going to the party? ");
+int numberOfAttendees = Convert.ToInt32(Console.ReadLine());
+
+System.Console.Write("How many pizzas? ");
+int numberOfPizzas = Convert.ToInt32(Console.ReadLine());
+
+System.Console.Write("What is the price per pizza? $");
+double priceofPizza = Convert.ToDouble(Console.ReadLine());
+
+double totalSlices = numberOfPizzas * slicesPerPizza;
+double slicesPerPerson = Convert.ToDouble(totalSlices/(double)numberOfAttendees);
+double pizzaCost = numberOfPizzas * priceofPizza;
+
+System.Console.WriteLine($"Total Slices: {totalSlices}");
+System.Console.WriteLine($"Slices per Person: {slicesPerPerson.ToString("F1")}");
+System.Console.WriteLine($"Pizza Cost: {pizzaCost.ToString("C")}");
