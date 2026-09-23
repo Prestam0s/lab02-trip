@@ -1,5 +1,5 @@
 ﻿//Part 1: Road Trip
-/*
+
 System.Console.Write("How many miles is your round trip? ");
 double roundTripMiles = Convert.ToDouble(Console.ReadLine());
 
@@ -34,7 +34,7 @@ double pizzaCost = numberOfPizzas * priceofPizza;
 System.Console.WriteLine($"Total Slices: {totalSlices}");
 System.Console.WriteLine($"Slices per Person: {slicesPerPerson.ToString("F1")}");
 System.Console.WriteLine($"Pizza Cost: {pizzaCost.ToString("C")}");
-*/
+
 //Part 3: Paycheck
 
 const double taxRate = 0.18;
@@ -53,3 +53,14 @@ System.Console.WriteLine($"Gross pay: {grossPay.ToString("C")}");
 System.Console.WriteLine($"Tax Withheld: {taxWithheld.ToString("C")}");
 System.Console.WriteLine($"Take home pay: {takeHomePay.ToString("C")}");
 
+//Part 4: The Whole Trip
+
+double tripTotal = fuelCost + pizzaCost;
+double costPerPerson = tripTotal/numberOfAttendees;
+double takeHomePayPerHour = takeHomePay/hoursWorked;
+double hoursYouMustWork = costPerPerson/takeHomePayPerHour;
+
+System.Console.WriteLine($"Trip Total: {tripTotal.ToString("C")}");
+System.Console.WriteLine($"Cost Per Person: {costPerPerson.ToString("C")}");
+System.Console.WriteLine($"Take home pay per hour: {takeHomePayPerHour.ToString("C")}");
+System.Console.WriteLine($"Hours you must work to cover your share: {hoursYouMustWork.ToString("F2")}");
