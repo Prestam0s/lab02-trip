@@ -1,4 +1,16 @@
-﻿//Part 1: Road Trip
+﻿﻿/*
+* Name: Preston Offutt  
+* Course: CSCI 1250, Section 001
+* Assignment: Lab 2, Trip
+* Date: September 21, 2026
+* Description: Finds total cost and distance for a trip with pizza party
+.
+*/
+
+
+
+
+//Part 1: Road Trip
 
 System.Console.Write("How many miles is your round trip? ");
 double roundTripMiles = Convert.ToDouble(Console.ReadLine());
